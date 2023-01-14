@@ -53,14 +53,14 @@ input, select{
 
 .todo-container{
     max-width: 450px;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
     background-color: #FDFDFD;
     padding: 1.5rem;
     border-radius: 15px;
 }
 
 .todo-container header{
-    text-align:center;
+    text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 
@@ -76,21 +76,22 @@ input, select{
 }
 
 #todo-form p, 
-#edit-form p{
+#edit-form p {
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-.form-control{
+.form-control {
     display: flex;
 }
 
-.form-control input{
+.form-control input {
     margin-right: 0.3rem;
 }
 
-#cancel-edit-btn{
+.cancel-edit-btn {
     margin-top: 1rem;
+    color: #444;
 }
 
 /* Todo toolbar */
@@ -123,3 +124,8 @@ input, select{
     width: 100%;
     margin-right: 0.3rem;
 }
+
+#filter select {
+    flex: 1;
+}
+
