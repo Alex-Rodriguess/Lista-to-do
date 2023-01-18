@@ -7,3 +7,6 @@ O aplicativo por ser web é compatível com qualquer dispositivo e qualquer tipo
 
 
 ![todo-list](https://user-images.githubusercontent.com/94028723/213191949-063c1077-162a-415e-ad26-7f51920505a1.png)
+
+
+Link deploy: https://alex-rodriguess.github.io/Lista-to-do/
