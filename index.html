@@ -20,17 +20,19 @@
             <h1>Lista de Tarefas</h1>
         </header>
         <form id="todo-form">
-            <p>Adicione sua tarefa</p>
+            <p>Adicionar tarefa / Data e Hora</p>
+
             <div class="form-control">
-                <input type="text" id="todo-input" placeholder="O que você vai fazer?" />
-                <input type="date" id="todo-data">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?" required />
+                <input type="date" id="todo-data" required>
+                <input type="time" id="todo-hora" required>
                 <button type="submit">
                     <i class="fa-thin fa-plus"></i>
                 </button>
             </div>
         </form>
         <form id="edit-form" class="hide">
-            <p>Edite sua tarefa</p>
+            <p>Editar tarefa</p>
             <div class="form-control">
                 <input type="text" id="edit-input" />
                 <button type="submit">
@@ -60,8 +62,9 @@
         </div>
         <div id="todo-list">
             <div class="todo">
-                <h3>Estou fazendo alguma coisa...</h3>
-                <h3>Dia...</h3>
+                <h3>Vou fazer algo...</h3>
+                <h3>Data - Hora...</h3>
+
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
                     <button class="edit-todo">

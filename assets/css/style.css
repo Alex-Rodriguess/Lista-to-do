@@ -53,7 +53,7 @@ input, select{
 /* Todo Header*/
 
 .todo-container{
-    max-width: 450px;
+    max-width: 550px;
     margin: 3rem auto 0;
     background-color: #FDFDFD;
     padding: 1.5rem;
@@ -153,6 +153,7 @@ input, select{
 .todo h3{
     flex: 1;
     font-size: 0.9rem;
+
 }
 
 .done{

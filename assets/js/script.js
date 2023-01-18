@@ -2,6 +2,7 @@
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const dataInput = document.querySelector("#todo-data");
+const horaInput = document.querySelector("#todo-hora");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
@@ -12,7 +13,7 @@ const filterBtn = document.querySelector("#filter-select");
 
 let oldInputValue;
 
-
+console.log((new Date()).toISOString().match(/^[0-9]{4}\-[0-9]{2}\-[0-9]{2}/)[0].split('-').reverse().join('/'))
 
 // Funções
 const saveTodo = (text, done = 0, save = 1) => {
@@ -126,10 +127,10 @@ const filterTodos = (filterValue) => {
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const inputValue = todoInput.value + ' - ' + dataInput.value;
+    const inputValue = todoInput.value + ' - ' + dataInput.value.match(/^[0-9]{4}\-[0-9]{2}\-[0-9]{2}/)[0].split('-').reverse().join('/') + ' - ' + horaInput.value;
 
     if (inputValue) {
-        console.log(inputValue);
+
 
         saveTodo(inputValue);
     }
