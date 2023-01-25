@@ -1,5 +1,5 @@
 # Lista-to-do / Lista de Tarefas
-Projeto criado com base nas tecnologias Html, CSS e Javascript Vanilla.
+Projeto criado com base nas tecnologias Html, CSS e Javascript Vanilla(puro).
 Trata-se de uma lista de tarefas onde o usuário pode adicionar, editar e salvar tarefas diárias.
 Os dados ficam armazenados no cache do navegador (localStorage) e não expiram, ficam salvos e só serão excluídos 
 se o usuário limpar o histórico do navegador.
